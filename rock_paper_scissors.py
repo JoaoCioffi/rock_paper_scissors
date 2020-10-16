@@ -31,6 +31,7 @@ def rock_paper_scissors():
         
         choice_player = input('\nPor favor, digite \'PEDRA\', \'PAPEL\' ou \'TESOURA\' -> ')
         choice_player = choice_player.upper()
+        
         choice_machine = ['PEDRA', 'PAPEL', 'TESOURA']
         
         winner_status = 'você ganhou =)'
