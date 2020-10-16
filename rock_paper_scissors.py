@@ -37,7 +37,7 @@ def rock_paper_scissors():
 
         choice_machine = ['PEDRA', 'PAPEL', 'TESOURA']
 
-        # Smile Emoji:
+        # Happy Emoji:
         # U+1F642 :original
         # U0001F642 :modified for Python
 
