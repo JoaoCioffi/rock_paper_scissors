@@ -49,7 +49,7 @@ def rock_paper_scissors():
         draw_status = 'deu empate!'
         loser_status = 'você perdeu \U0001F641'
 
-        value = random()
+        value = random()  #-> gera um valor aleatório entre 0 e 1
 
         if 0 <= value < (1 / 3):
             read_choice_machine = choice_machine[0]  # -> Máq: PEDRA
