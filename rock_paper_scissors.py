@@ -51,7 +51,7 @@ def rock_paper_scissors():
 
         value = random()  #-> gera um valor aleatório entre 0 e 1
 
-        if 0 <= value < (1 / 3):
+        if 0 <= value < (1 / len(choice_machine)):
             read_choice_machine = choice_machine[0]   # -> Máq: PEDRA
             print(f'\nEscolha de {name}: {choice_player} | Escolha da máquina: {read_choice_machine}')
 
@@ -64,7 +64,7 @@ def rock_paper_scissors():
             else:                                     # -> Plyr: TESOURA
                 print(f'\n{name}, {loser_status}')
 
-        if (1 / 3) <= value < (2 * (1 / 3)):
+        if (1 / len(choice_machine)) <= value < (2 * (1 / len(choice_machine))):
             read_choice_machine = choice_machine[1]   # -> Máq: PAPEL
             print(f'\nEscolha de {name}: {choice_player} | Escolha da máquina: {read_choice_machine}')
 
@@ -77,7 +77,7 @@ def rock_paper_scissors():
             else:                                     # -> Plyr: TESOURA
                 print(f'\n{name}, {winner_status}')
 
-        if (2 * (1 / 3)) <= value <= 1:
+        if (2 * (1 / len(choice_machine))) <= value <= 1:
             read_choice_machine = choice_machine[2]   # -> Máq: TESOURA
             print(f'\nEscolha de {name}: {choice_player} | Escolha da máquina: {read_choice_machine}')
 
