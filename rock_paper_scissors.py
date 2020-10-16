@@ -25,7 +25,7 @@ def rock_paper_scissors():
 
     if decision == 1:
 
-        wait_time = 5   #->tempo de espera
+        wait_time = 5
         for j in range(wait_time):
             print(f'\nCarregando o jogo. Por favor, aguarde {j + 1}/{wait_time} segundos...')
             time.sleep(1)
@@ -37,9 +37,17 @@ def rock_paper_scissors():
 
         choice_machine = ['PEDRA', 'PAPEL', 'TESOURA']
 
-        winner_status = 'você ganhou =)'
+        # Smile Emoji:
+        # U+1F642 :original
+        # U0001F642 :modified for Python
+
+        # Sad Emoji:
+        # U+1F641 :original
+        # U0001F641 :modified for Python
+
+        winner_status = 'você ganhou \U0001F642'
         draw_status = 'deu empate!'
-        loser_status = 'você perdeu =('
+        loser_status = 'você perdeu \U0001F641'
 
         value = random()
 
