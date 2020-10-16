@@ -52,42 +52,42 @@ def rock_paper_scissors():
         value = random()  #-> gera um valor aleatório entre 0 e 1
 
         if 0 <= value < (1 / 3):
-            read_choice_machine = choice_machine[0]  # -> Máq: PEDRA
+            read_choice_machine = choice_machine[0]   # -> Máq: PEDRA
             print(f'\nEscolha de {name}: {choice_player} | Escolha da máquina: {read_choice_machine}')
 
-            if choice_player == choice_machine[0]:  # -> Plyr: PEDRA
+            if choice_player == choice_machine[0]:    # -> Plyr: PEDRA
                 print(f'\n{name}, {draw_status}')
 
             elif choice_player == choice_machine[1]:  # -> Plyr: PAPEL
                 print(f'\n{name}, {winner_status}')
 
-            else:  # -> Plyr: TESOURA
+            else:                                     # -> Plyr: TESOURA
                 print(f'\n{name}, {loser_status}')
 
         if (1 / 3) <= value < (2 * (1 / 3)):
-            read_choice_machine = choice_machine[1]  # -> Máq: PAPEL
+            read_choice_machine = choice_machine[1]   # -> Máq: PAPEL
             print(f'\nEscolha de {name}: {choice_player} | Escolha da máquina: {read_choice_machine}')
 
-            if choice_player == choice_machine[0]:  # -> Plyr: PEDRA
+            if choice_player == choice_machine[0]:    # -> Plyr: PEDRA
                 print(f'\n{name}, {loser_status}')
 
             elif choice_player == choice_machine[1]:  # -> Plyr: PAPEL
                 print(f'\n{name}, {draw_status}')
 
-            else:  # -> Plyr: TESOURA
+            else:                                     # -> Plyr: TESOURA
                 print(f'\n{name}, {winner_status}')
 
         if (2 * (1 / 3)) <= value <= 1:
-            read_choice_machine = choice_machine[2]  # -> Máq: TESOURA
+            read_choice_machine = choice_machine[2]   # -> Máq: TESOURA
             print(f'\nEscolha de {name}: {choice_player} | Escolha da máquina: {read_choice_machine}')
 
-            if choice_player == choice_machine[0]:  # -> Plyr: PEDRA
+            if choice_player == choice_machine[0]:    # -> Plyr: PEDRA
                 print(f'\n{name}, {winner_status}')
 
             elif choice_player == choice_machine[1]:  # -> Plyr: PAPEL
                 print(f'\n{name}, {loser_status}')
 
-            else:  # -> Plyr: TESOURA
+            else:                                     # -> Plyr: TESOURA
                 print(f'\n{name}, {draw_status}')
 
 
