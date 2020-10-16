@@ -9,7 +9,6 @@ print('\n')
 print(' ~ ' * 30)
 print('\n')
 
-
 import __hello__
 from random import random
 import time
@@ -26,9 +25,9 @@ def rock_paper_scissors():
     
     if decision == 1:
         
-        time.sleep(1.5)
+        time.sleep(1)
         print('\nInicializando jogo ...')
-        time.sleep(1.5)
+        time.sleep(1)
         
         choice_player = input('\nPor favor, digite \'PEDRA\', \'PAPEL\' ou \'TESOURA\' -> ')
         choice_player = choice_player.upper()
@@ -38,7 +37,7 @@ def rock_paper_scissors():
         draw_status ='deu empate!'
         loser_status = 'você perdeu =('
         
-        value = random()
+        value = random()  #-> Faz uma escolha randômica entre 0 e 1
         
         if 0 <= value < (1/3):
             read_choice_machine = choice_machine[0]  #-> Máq: PEDRA
